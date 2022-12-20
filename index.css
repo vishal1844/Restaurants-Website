@@ -1,0 +1,233 @@
+body{
+overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+*{
+padding: 0;
+margin: 0;
+}
+/* CSS Variable  */
+:root{
+--navbar-height:59px;
+} 
+html{
+scroll-behavior: smooth;
+}
+
+/* Adding CSS for Navigation Bar  */ 
+
+/* #navbar{
+
+} */
+#navbar{
+ display: flex;
+ align-items: center;
+  top:0px; 
+
+} 
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute; 
+top:0px;
+left: 0px;
+height: 546px;
+width: 100%; 
+z-index: -1; 
+opacity: 0.5;
+}
+/* NAvigation  Logo And Image  */ 
+#logo{
+margin: 8px 11px;
+}
+#logo img{
+    margin: 4px 8px;
+    height: 105px;
+    border-radius: 43px;
+} 
+#navbar ul{
+display: flex; 
+
+} 
+
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none; 
+} 
+#navbar ul li a{ 
+display: block;
+color: white; 
+font-family: 'Baloo 2', cursive;
+padding: 18px 20px;
+border-radius: 23px; 
+text-decoration: none;
+}
+#navbar ul li a:hover{ 
+/* display: block; */
+color: black; 
+background-color: white;
+
+} 
+
+/* Add CSS to home section  */
+#home{
+display: flex;
+flex-direction: column; 
+padding: 3px 200px;  
+height: 457px;
+justify-content: center;
+align-items: center;
+}
+#home ::before{
+content: "";
+background: url('5.jpg')no-repeat center center/cover; ;
+position: absolute; 
+top:0px;
+left: 0px;
+height: 587px;
+width: 100%; 
+z-index: -1; 
+opacity: 0.89;
+} 
+#home p{
+text-align: center;
+color: white; 
+font-size: 23px;
+font-family: 'Source Serif Pro', serif;
+}
+.btn{
+padding: 6px 34px;  
+border: 2px solid black;
+border-radius: 23px;
+background-color: antiquewhite;
+font-size: 1.4rem;
+font-family: 'Baloo 2', cursive; 
+margin: 23px 34px; 
+cursor: pointer;
+} 
+
+/* Menu conatinerv */  
+/* #menu-container{ */
+/* margin-top: 217px; */
+/* }  */
+#menu{ 
+margin: 34px;
+display: flex;
+}
+#menu .box{ 
+border: 2px solid brown; 
+padding: 23px; 
+margin:3px; 
+border-radius: 23px;
+background-color: rgb(247, 245, 243);
+} 
+#menu .box img{
+height: 179px;
+    display: block;
+    padding: 30px;
+    margin: auto;
+    width: 294px;
+} 
+#menu .box p{
+font-family: 'Source Serif Pro', serif;
+}
+ 
+ /* client -section / */  
+ #client-section{ 
+ /* height:456px;  */
+ position: relative;
+ }
+ /* #client-section ::before{  
+content: "";
+position: absolute;
+background: url('/Projects/Project2/6.jpg')no-repeat center center/cover; 
+width: 100%; 
+height: 100%;
+z-index: -1;
+opacity: 0.6; */
+ /* height:456px; */
+/* }   */
+ .client-items{
+ padding: 3px;
+  padding: 8px;
+
+ }
+ .client-items img{
+height: 295px;
+
+ }
+ #clients{
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ }
+
+
+ /* Contact -Us */ 
+#contact{
+position: relative;
+} 
+.contact-box{
+display: flex;
+align-items: center;
+justify-content: center; 
+padding-bottom: 23px;
+}
+
+#contact::before{
+
+content: "";
+position: absolute; 
+background: url('contact.jpg')no-repeat center center/cover; 
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+ 
+} 
+.contact-box label{
+font-size: larger;
+}
+#contact .contact-box input,textarea{  
+width: 100%;
+    /* height: 100%; */
+    padding: 5px;
+    margin: 7px auto;
+    border-radius: 23px;  
+    font-size: 1.1rem;
+} 
+
+.contact-box form{
+width: 40%;
+}
+/* #contact .contact-box{  
+width: 1400px;
+ height: 100%;
+ border-radius: 23px;
+ margin: 0px 45px;
+ justify-content: center;
+ align-items: center;
+
+} */
+/* footer */
+
+footer{ 
+background-color: black;
+color: white; 
+padding: 3px 50px; 
+/* width: 100%; */
+}
+/*utility clasees */
+.h-primary{
+font-family: 'Source Serif Pro', serif;
+text-align: center;
+font-size: 2.8rem; 
+padding: 13px;
+}  
+
+.centre{
+text-align: center;
+} 
+.h-secondary{
+font-family: 'Source Serif Pro', serif;
+}
+
